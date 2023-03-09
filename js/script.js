@@ -23,6 +23,12 @@ monogatari.action ('message').messages ({
 		<p>要写随手可得的星星和月亮</p>
 		<p>要写每天都快快乐乐感到充实的园子里的你我</p>
 		`
+	},
+	'Information':{
+		title:'系统提示',
+		body:`
+		<p>您已进入AD世界</p>
+		`
 	}
 });
 
@@ -58,7 +64,11 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'Front':'Front.mp3',
+	'Middle':'Middle.mp3',
+	'BackPart':'Back.mp3',
+	'Evening':'Evening.mp3',
+	'Cure':'Cure.mp3'
 });
 
 // Define the voice files used in the game.
@@ -78,7 +88,7 @@ monogatari.assets ('videos', {
 
 // Define the images used in the game.
 monogatari.assets ('images', {
-	
+	'AUP':'AUP.jpg'
 });
 
 // Define the backgrounds for each scene.
@@ -87,19 +97,28 @@ monogatari.assets ('scenes', {
 	'tree':'2.jpeg',
 	'school':'3.jpg',
 	'chair':'Chair.jpg',
-	'main':'Main.jpg'
+	'main':'Main.jpg',
+	'Library':'Library.jpg',
+	'Shelf':'Shelf.jpg',
+	'HosOffice':'HosOffice.jpg',
+	'BuInside':'BuInside.jpg',
+	'EPlayground':'EPlayground.jpg',
+	'Football':'Football.jpg',
+	'Building':'Building.jpg',
+	'Purple':'Purple.jpg',
+	'Roof':'Roof.jpg',
+	'Palace':'Palace.jpg'
 });
 
 
 // Define the Characters
 monogatari.characters ({
-	'y': {
-		name: 'Yui',
-		color: '#5bcaff'
-	},
 	'm': {
 		name: '我',
-		color: '#5bcaff'
+		color: '#5bcaff',
+		sprites:{
+			normal:'diode.jpg'
+		}
 	},
 	'system':{
 		name: '未知的声音',
@@ -111,11 +130,17 @@ monogatari.characters ({
 	},
 	'lbl':{
 		name:'680pF',
-		color:'#5bcaff'
+		color:'#5bcaff',
+		sprites:{
+			normal:'681.jpg'
+		}
 	},
 	'cd':{
 		name:'写代码的同学',
-		color:'#5bcaff'
+		color:'#5bcaff',
+		sprites:{
+			normal:'coder.jpg'
+		}
 	},
 	'pb':{
         name:'路过的同学',
@@ -175,14 +200,15 @@ monogatari.script ({
 	],
 
 	'beginning':[
+		'show background main',
 		'm （睁眼）',
 		'm 这是哪儿？我不是在睡觉吗？',
-		'show background main',
-		'system 系统提示：您已进入AD世界',
+		'show message Information',
 		'm AD世界...？我不是在板子上工作吗？',
 		'm 我记得有个很赶的ddl···不眠不休地肝了几个通宵，一会正向导通一会儿反向截止，一会儿被人拔出来一会儿被人插到板子上，累的腿都快断了。还剩一点电路就搭完了，但是实在太困了就睡着了，怎么一觉醒来就到这里来了？',
 		'（挣扎着爬起身）这里的天是白色的···云是蓝色的。好奇怪啊',
 		'（前方有个身影奔跑着出现了）',
+		//'show character lbl normal at center with fadeIn',
 		'u 你没事吧？',
 		'show background chair',
 		'm （好像是一个腿很长、个子很高的同学。我有点犹豫，作为一只重度社恐二极管，我不知道怎么回应来自陌生人的好意，但是这是在AD世界···）',
