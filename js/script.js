@@ -216,7 +216,7 @@ monogatari.script ({
 		'nvl 要写随时随地无需任何条件就发生干涉的自然光',
 		'nvl 要写随手可得的星星和月亮',
 		'nvl 要写每天都快快乐乐感到充实的园子里的你我”',
-		'show message FirstMail',
+		//'show message FirstMail',
 		'jump beginning'
 	],
 

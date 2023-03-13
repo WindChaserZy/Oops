@@ -250,7 +250,7 @@ monogatari.script({
 
     'B8':[
         '你觉得这本书也就像DA世界里那些乱七八糟的专家说的乱七八糟的毒鸡汤，于是决定把书放回去。',
-        'hide image AUP with fadeOut',
+        'hide image Aup with fadeOut',
         '你又想起还没搭完的电路，你开始觉得是不是因为自己有问题所以电路一直搭不对，于是你请求680pF载你去校医院看下医生。',
         'show background Hospital with fadeIn',
         '走进校医院，你看到了很多人在门诊排队，还有一部分人拿着处方和医生聊着转诊，似乎打算转院到北医六院。',
@@ -269,6 +269,10 @@ monogatari.script({
         'doc （微笑）没什么大碍，发光正常，就是光有点微弱，能量不太足，回去给自己多充充电，多休息休息就好了。',
         '你哑然，人们总喜欢把正常的事情评价为反常，把反常的事情认为是平常。',
         '不过这是在AD世界，这样发光应该是没有问题的，你想。',
+        'show image Ill with fadeIn',
+        'gallery unlock Ill',
+        'system 你解锁了病历。',
+        'hide image Ill with fadeOut',
         'hide character m with LfadeOut',
         'hide character doc with RfadeOut',
         'show background Purple with fadeIn',
