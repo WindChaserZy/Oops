@@ -31,7 +31,9 @@ button {
 button:hover {
 
 }
-
+.MainScreen {
+    background-image: url("../assets/scenes/Main.jpg");
+}
 /* General Styling for Menu Screens */
 [data-screen] {
 
@@ -284,5 +286,186 @@ input[type=range]::-ms-fill-upper {
     }
 }
 
+.Center {
+    background-size: contain;
+	animation-name: Center; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
 
+@keyframes Center {
+    0%    { 
+        transform: scale(0); 
+    }
+    100%  {
+		transform: scale(1); 
+    }
+}
 
+.Left{
+    background-size: contain;
+	animation-name: Left; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
+
+@keyframes Left {
+    0%    { 
+        transform: scale(0) translateX(-300pX); 
+    }
+    100%  {
+		transform: scale(1) translateX(-300pX); 
+    }
+}
+
+.Right{
+    background-size: contain;
+	animation-name: Right; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
+
+@keyframes Right {
+    0%    { 
+        transform: scale(0) translateX(300pX); 
+    }
+    100%  {
+		transform: scale(1) translateX(300pX); 
+    }
+}
+
+.MtoL{
+    background-size: contain;
+	animation-name: MtoL; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
+
+@keyframes MtoL {
+    0%    { 
+        transform: translateX(0); 
+    }
+    100%  {
+		transform: translateX(-300pX); 
+    }
+}
+
+.MtoR{
+    background-size: contain;
+	animation-name: MtoR; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
+
+@keyframes MtoR {
+    0%    { 
+        transform: translateX(0); 
+    }
+    100%  {
+		transform: translateX(300pX); 
+    }
+}
+
+.RtoM{
+    background-size: contain;
+	animation-name: RtoM; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
+
+@keyframes RtoM {
+    0%    { 
+        transform: translateX(300pX); 
+    }
+    100%  {
+		transform: translateX(0); 
+    }
+}
+
+.RfadeOut{
+    background-size: contain;
+	animation-name: RfadeOut; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
+
+@keyframes RfadeOut {
+    0%    { 
+        transform: translateX(300pX) scale(1); 
+    }
+    100%  {
+		transform: translateX(300pX) scale(0); 
+    }
+}
+
+.LfadeOut{
+    background-size: contain;
+	animation-name: LfadeOut; /* Name of the animation to use */
+    animation-duration: 1s;
+    animation-iteration-count: 1; /* 1 if it should only move once */
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    -moz-transition: ease 1s all;
+    -o-transition: ease 1s all;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+}
+
+@keyframes LfadeOut {
+    0%    { 
+        transform: translateX(-300pX) scale(1); 
+    }
+    100%  {
+		transform: translateX(-300pX) scale(0); 
+    }
+}
