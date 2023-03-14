@@ -272,9 +272,6 @@ monogatari.script({
 
     'A8':[
         '你用680pF的学生卡把这本《一本书教你学会AUP》从图书馆借了出来，随便翻了翻。',
-        'show message GetAup',
-        'gallery unlock Aup',
-        'hide image Aup with fadeOut',
         '你又想起还没搭完的电路，你开始觉得是不是因为自己有问题所以电路一直搭不对，于是你请求680pF载你去校医院看下医生。',
         'show background Hospital with fadeIn',
         '走进校医院，你看到了很多人在门诊排队，还有一部分人拿着处方和医生聊着转诊，似乎打算转院到北医六院。',
