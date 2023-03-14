@@ -33,9 +33,18 @@ monogatari.script({
         '是从未在DA世界里表现出来的、被压制的另一面的你。',
         '希望你回到DA世界后，没记住680pF也无所谓，要记住今天的感觉。记住尝试的感觉，记住帮助与被帮助的感觉，记住你对躺和卷怎样中和的思考。',
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
-        'centered End',
         'stop music Cure with fade 3',
-        'jump Start'
+        'play music Evening with loop',
+        'nvl 这个故事的主体部分写于2022年11月。',
+        'nvl 故事中的没有核酸、没有健康码、不用戴口罩，都是11月时候的想象。一个月之后这一切都实现了。',
+        'nvl 故事关于自我、尝试、躺和卷、帮助，或者更确切地说，关于你在屏幕前能get到的一些东西。',
+        'nvl 这个故事可能存在着一些漏洞，但是希望能给你带来一点东西，哪怕是一张奖券。',
+        'nvl 最后想用旅行团乐队在《乐队的夏天》中说过的一句话来结束：',
+        'nvl “我们不是来改变世界的，我们就是世界。”',
+        'show scene #ffffff with fadeIn',
+        'centered End',
+        'stop music Evening with fade 3',
+        'end'
     ],
 
     'e2':[
@@ -65,9 +74,10 @@ monogatari.script({
         'hide character m with LfadeOut',
         'hide character lbl with RfadeOut',
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
+        'show scene #ffffff with fadeIn',
         'centered End',
         'stop music Cure with fade 3',
-        'jump Start'
+        'end'
     ],
 
     'e3':[
@@ -89,9 +99,10 @@ monogatari.script({
         'hide character m with LfadeOut',
         'hide character lbl with RfadeOut',
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
+        'show scene #ffffff with fadeIn',
         'centered End',
         'stop music Evening with fade 3',
-        'jump Start'
+        'end'
     ],
 
     'e4':[
@@ -103,9 +114,10 @@ monogatari.script({
         '可是你想的是，如果当时见面的时候，明知他可能出了问题，要是能多和他聊聊，多了解一下他，或许今天不会是这样的结局。',
         '可惜没有如果。',
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
+        'show scene #ffffff with fadeIn',
         'centered End',
         'stop music Evening with fade 3',
-        'jump Start'
+        'end'
     ],
 
     'e5':[
@@ -120,9 +132,16 @@ monogatari.script({
         '代码运行起来，是他二十余年的经历和遗憾，快乐和希望，还有生命最后的痛苦。',
         '在他离开之后，大家用这种方式才得以了解他。',
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
+        'nvl 这个故事的主体部分写于2022年11月。',
+        'nvl 故事中的没有核酸、没有健康码、不用戴口罩，都是11月时候的想象。一个月之后这一切都实现了。',
+        'nvl 故事关于自我、尝试、躺和卷、帮助，或者更确切地说，关于你在屏幕前能get到的一些东西。',
+        'nvl 这个故事可能存在着一些漏洞，但是希望能给你带来一点东西，哪怕是一张奖券。',
+        'nvl 最后想用旅行团乐队在《乐队的夏天》中说过的一句话来结束：',
+        'nvl “我们不是来改变世界的，我们就是世界。”',
+        'show scene #ffffff with fadeIn',
         'centered End',
         'stop music Evening with fade 3',
-        'jump Start'
+        'end'
     ],
 
     'e6':[
@@ -146,9 +165,10 @@ monogatari.script({
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
         'hide character m with LfadeOut',
         'hide character lbl with RfadeOut',
+        'show scene #ffffff with fadeIn',
         'centered End',
         'stop music Cure with fade 3',
-        'jump Start'
+        'end'
     ],
 
     'e7':[
@@ -161,9 +181,10 @@ monogatari.script({
         '代码运行起来，是他二十余年的经历和遗憾，快乐和希望，还有生命最后的痛苦。',
         '在他离开之后，大家用这种方式才得以了解他。',
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
+        'show scene #ffffff with fadeIn',
         'centered End',
         'stop music Evening with fade 3',
-        'jump Start'
+        'end'
     ],
 
     'e8':[
@@ -173,8 +194,9 @@ monogatari.script({
         '你又在校园里四处逛了逛，看到了很多有趣的、和你原本世界完全不同的景象。',
         '你渐渐觉得无聊了。',
         '突然你眼前一片眩晕。睁眼时你回到了DA世界，你发现你正在玩一个雷系今年新出的游戏《Special date Of Ordinary》。',
+        'show scene #ffffff with fadeIn',
         'centered End',
         'stop music Evening with fade 3',
-        'jump Start'
+        'end'
     ]
 });

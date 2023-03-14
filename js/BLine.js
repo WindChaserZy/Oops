@@ -9,7 +9,13 @@ monogatari.script({
         '你想着电路还没有搭完，于是决定找个安静的地方仔细回忆下，把电路设计完成。',
         'show image Circuit with fadeIn',
         'gallery unlock Circuit',
-        'system 你解锁了面包板。',
+        {'Conditional':{
+            'Condition':function(){
+                return this.state.unlocked.includes('Circuit');
+            },
+            'True': 'show message GetCircuit',
+        }
+        },
         'hide image Circuit with fadeOut',
         {
             'Choice':{
@@ -28,7 +34,7 @@ monogatari.script({
 
     'Bb':[
         '你觉得这本书也就像DA世界里那些乱七八糟的专家说的乱七八糟的毒鸡汤，于是决定把书放回去。',
-        'hide image AUP with fadeOut', 
+        'hide image Aup with fadeOut', 
         'jump e8'
     ],
 
@@ -98,7 +104,7 @@ monogatari.script({
         '在你分神的时候，歌曲已经切换到了下一首，你也惊讶地发现主唱已经来到了你面前准备把麦克风递到你嘴边',
         'show image Micro with fadeIn',
         'gallery unlock Micro',
-        'system 你解锁了麦克风。',
+        'show message GetMicro',
         'hide image Micro with fadeOut',
         {
             'Choice':{
@@ -211,7 +217,6 @@ monogatari.script({
         'lbl 去图书馆吧，我有本书要还。',
         'hide character m with LfadeOut',
         'hide character lbl with RfadeOut',
-        'show background Lib with fadeIn',
         'show background Shelf with fadeIn',
         '680pF带你来到了图书馆，你惊讶地发现图书馆一片喧闹，你以为发生了什么事情，走近一看才发现是大家在联机打游戏。',
         '身后突然传来一声尖叫，你吓得猛地抓住了680pF的胳膊，扭头一看原来是有人在练声。回想刚才在六教的经历，你已经能迅速适应了，只是有些震惊:',
@@ -219,8 +224,12 @@ monogatari.script({
         'lbl 当然不会啊，图书馆是不允许安静的，你要是在这里安静地摸鱼是会被同学挂到树洞上骂死的。',
         '680pF也似乎习惯了你奇奇怪怪的问题，漫不经心地回答。',
         '哦，这个世界原来还有树洞。你感到很欣慰。',
+        'show background Lib with fadeIn',
         '趁着680pF去还书的间隙，你随便从书架上拿起了一本书：《一本书教你学会AUP》',
         'show image Aup with fadeIn',
+        'show message GetAup',
+        'gallery unlock Aup',
+        'hide image Aup with fadeOut',
         'show character m normal with Left',
         'm （什么是AUP?）',
         'show character lbl normal with Right',
@@ -250,7 +259,6 @@ monogatari.script({
 
     'B8':[
         '你觉得这本书也就像DA世界里那些乱七八糟的专家说的乱七八糟的毒鸡汤，于是决定把书放回去。',
-        'hide image Aup with fadeOut',
         '你又想起还没搭完的电路，你开始觉得是不是因为自己有问题所以电路一直搭不对，于是你请求680pF载你去校医院看下医生。',
         'show background Hospital with fadeIn',
         '走进校医院，你看到了很多人在门诊排队，还有一部分人拿着处方和医生聊着转诊，似乎打算转院到北医六院。',
@@ -355,6 +363,10 @@ monogatari.script({
         'cd 我们这些管子，二极管也好，三极管也好，都是经过摸鱼高考检测机制筛选出来来到这里的。可是有些管子在检测的时候被加了过高的电压，测试当时的结果是正常的，优秀的，但是测试结束后它就已经被烧坏了。',
         'cd 但是大家不知道，或者知道也不愿承认，可能生活就是这样。',
         'cd 我的全部都在我的电脑里，在我的代码里，希望大家能帮我让我能和我的电脑永远在一起。我的电脑就在2单元门口树下的电脑包里。',
+        'show image Bag with fadeIn',
+        'gallery unlock Bag',
+        'show message GetBag',
+        'hide image Bag with fadeOut',
         {
             'Choice':{
                 'Dialog':'这时，你决定:',
@@ -407,7 +419,6 @@ monogatari.script({
         'stop music',
         'play music Front with loop',
         '你觉得这本书也就像DA世界里那些乱七八糟的专家说的乱七八糟的毒鸡汤，于是决定把书放回去。',
-        'hide image AUP with fadeOut',
         '你又想起还没搭完的电路，你开始觉得是不是因为自己有问题所以电路一直搭不对，于是你请求680pF载你去校医院看下医生。',
         'show background Hospital with fadeIn',
         '走进校医院，你看到了很多人在门诊排队，还有一部分人拿着处方和医生聊着转诊，似乎打算转院到北医六院。',
@@ -507,6 +518,10 @@ monogatari.script({
         'cd 我们这些管子，二极管也好，三极管也好，都是经过摸鱼高考检测机制筛选出来来到这里的。可是有些管子在检测的时候被加了过高的电压，测试当时的结果是正常的，优秀的，但是测试结束后它就已经被烧坏了。',
         'cd 但是大家不知道，或者知道也不愿承认，可能生活就是这样。',
         'cd 我的全部都在我的电脑里，在我的代码里，希望大家能帮我让我能和我的电脑永远在一起。我的电脑就在2单元门口树下的电脑包里。',
+        'show image Bag with fadeIn',
+        'gallery unlock Bag',
+        'show message GetBag',
+        'hide image Bag with fadeOut',
         {
             'Choice':{
                 'Dialog':'他又停了下来，你决定:',

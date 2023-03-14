@@ -29,7 +29,56 @@ monogatari.action ('message').messages ({
 		body:`
 		<p>您已进入AD世界</p>
 		`
-	}
+	},
+	'GetIll':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了一本病历。</p>
+		`
+	},
+	'GetCircuit':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了一块面包板。</p>
+		`
+	},
+	'GetMicro':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了一个麦克风。</p>
+		`
+	},
+	'GetDiode':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了发光的二极管</p>
+		`
+	},
+	'GetBag':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了同学的电脑包</p>
+		`
+	},
+	'GetLrs':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了一盒狼人杀</p>
+		`
+	},
+	'GetAup':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了《一本书教你学会AUP》。</p>
+		`
+	},
+	'GetXrk':{
+		title:'系统提示',
+		body:`
+		<p>你解锁了一朵彩色的向日葵。</p>
+		`
+	},
+
 });
 
 // Define the notifications used in the game
@@ -66,6 +115,7 @@ monogatari.assets ('gallery', {
 	'Dio':'dio.png',
 	'Ill':'ill.png',
 	'Lrs':'lrs.png',
+	'Xrk':'xrk.png',
 });
 
 // Define the music used in the game.
@@ -101,6 +151,7 @@ monogatari.assets ('images', {
 	'Dio':'dio.png',
 	'Ill':'ill.png',
 	'Lrs':'lrs.png',
+	'Xrk':'xrk.png',
 });
 
 // Define the backgrounds for each scene.
@@ -181,31 +232,6 @@ monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show scene #f7f6f6 with fadeIn',
-		'show notification Welcome',
-		{
-			'Input': {
-				'Text': 'What is your name?',
-				'Validation': function (input) {
-					return input.trim ().length > 0;
-				},
-				'Save': function (input) {
-					this.storage ({
-						player: {
-							name: input
-						}
-					});
-					return true;
-				},
-				'Revert': function () {
-					this.storage ({
-						player: {
-							name: ''
-						}
-					});
-				},
-				'Warning': 'You must enter a name!'
-			}
-		},
 		'nvl “你要写这个世界',
 		'nvl 就不能只写春日里雨后泥土里好闻的香味和刚刚萌芽的爱恋',
 		'nvl 不能只写夏日里的爽口的橘子汽水和在期刊酝酿的paper',
