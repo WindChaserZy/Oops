@@ -223,7 +223,7 @@ monogatari.characters ({
         name:'医生',
         color:'#5bcaff',
 		sprites:{
-			normal:'Doctor.png'
+			normal:'doctor.png'
 		}
     },
 	'xz':{
