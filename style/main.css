@@ -19,26 +19,17 @@
 
 /* General Style */
 body {
-
+	
 }
 
 /* Simple Button styles*/
 button {
-    border: 1px solid;
-    background-color: #f038ff;
-    text-transform: uppercase;
-    font-size: 20px;
-    padding: 10px 20px;
-    font-weight: 300;
+	
 }
 
 /* Simple Button Style on Hover */
 button:hover {
-    border: 0;
-    background-color: #f038ff;
-    -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-    -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-    box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+	
 }
 
 /* General Styling for Menu Screens */
@@ -54,16 +45,24 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-    background-position-y: bottom;
+	background-position-y: bottom;
 }
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
-    background-color:#ffffff;
+	background-color:#ffffff;
 	color:#4b4b4b;
 	border-style: solid;
 	border-width: 2px;
 }
+[data-screen="main"] button:hover {
+	background-color:#ffffff;
+	color:#4b4b4b;
+	border-style: solid;
+	border-width: 2px;
+}
+
+
 
 /**
  * ===========================
@@ -73,10 +72,7 @@ button:hover {
 
 /* Slots Style */
 [data-component="save-slot"] figure {
-    background-color:#cccccc;
-	color:#4b4b4b;
-	border-style: solid;
-	border-width: 2px;
+
 }
 
 /* Slot's Image Style */
@@ -102,17 +98,65 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-
+	color:#000000;
+	background:#ffffff;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: 3px 3px 0px #000000;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 /* Choice Button Style on Hover */
 [data-component="choice-container"] button:hover {
-
+	background-color:#bbb8b8;
 }
 
 /* Text Box styling */
 [data-component="text-box"] {
-    
+	color:#ffffff;
+	/* background:#646464; */
+    background: rgba(100, 100, 100, 0.5);
+	border-top-style: solid;
+	border-top-color: #333333;
+	border-top-width: 2px;
+}
+
+/* Message Box styling */
+.modal .modal__content{
+	border-radius: 0%;
+}
+message-modal .modal__content{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #333333;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+}
+[data-ui="message-content"] h3{
+	font-size: 1.3rem;
+	text-align: center;
+	padding-bottom: 0.5rem;
+	border-bottom-color: #4b4b4b;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+}
+message-modal button{
+	background-color:#ffffff;
+	color:#4b4b4b;
+	border-style: solid;
+	border-width: 2px;
+}
+message-modal button:hover{
+	background-color:#cccccc;
+	color:#4b4b4b;
+	border-style: solid;
+	border-width: 2px;
+}
+.myPNG {
+	object-fit:contain;
+    height:100%;
+    width:100%;
 }
 
 /* Character Name Style */
@@ -122,7 +166,7 @@ button:hover {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-
+	color:#ffffff;
 }
 
 /* Character Images Styles */
@@ -145,23 +189,22 @@ button:hover {
 
 /* Quick Menu Style */
 [data-component="quick-menu"] {
-
+	background:#202020;
 }
 
 /* Quick Menu Buttons Style */
 [data-component="quick-menu"] span {
-    margin: 0rem;
+
 }
 
 /* Quick Menu Buttons Style on Hover */
 [data-component="quick-menu"] span:hover {
-    margin: 0rem;
-    
+
 }
 
 /* Quick Menu Buttons Icon Style */
 [data-component="quick-menu"] > span > .fa {
-    display: none;
+
 }
 
 /**
@@ -205,7 +248,11 @@ input[type=range]::-ms-fill-upper {
 
 	/* Quick Menu Style */
 	[data-component="quick-menu"] {
-
+		background:#202020;
+		top:0;
+	}
+	text-box, text-box::after {
+		bottom: 0rem;
 	}
 
 	/* Quick Menu Buttons Style */
@@ -216,6 +263,14 @@ input[type=range]::-ms-fill-upper {
 	/* Quick Menu Buttons Style on Hover */
 	[data-component="quick-menu"] span:hover {
 
+	}
+
+	game-logo-container {
+		margin-top: 40px;
+		width: 300px;
+		height: 396px;
+		background-image: url("../assets/images/title.svg");
+		align-self: center;
 	}
 }
 
@@ -253,22 +308,6 @@ input[type=range]::-ms-fill-upper {
 @media screen and (min-width: 500em) {
 
 }
-
-/* TODO: Modify this */
-.myInput .modal__content {
-    background: #222;
-    color: #fff;
-	width: 100%;
-}
-
-.someClass {
-    font-size: 2em;
-}
-
-.otherClass {
-    background: rgba(0,184,212, 0.5);
-}
-
 
 .bigger{
 	background-size: contain;

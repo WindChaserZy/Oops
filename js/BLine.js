@@ -3,19 +3,14 @@
 monogatari.script({
 
     'B1':[
+        'stop music',
         'play music Front with loop',
         '你非常紧张，不知道该称呼对方为同学还是学长还是老师，纠结之后你尴尬地落荒而逃，不顾身后陌生人的呼喊。',
         'hide character lbl with fadeOut',
         '你想着电路还没有搭完，于是决定找个安静的地方仔细回忆下，把电路设计完成。',
         'show image Circuit with fadeIn',
         'gallery unlock Circuit',
-        {'Conditional':{
-            'Condition':function(){
-                return this.state.unlocked.includes('Circuit');
-            },
-            'True': 'show message GetCircuit',
-        }
-        },
+        'show message GetCircuit',
         'hide image Circuit with fadeOut',
         {
             'Choice':{

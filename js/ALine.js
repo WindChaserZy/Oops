@@ -3,6 +3,7 @@
 monogatari.script({
 
     'A1':[
+        'stop music',
         'play music Front with loop',
         'm 同学你好，我没事，谢谢你的关心。',
         'show character lbl normal with MtoR',

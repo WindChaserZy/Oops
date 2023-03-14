@@ -3,7 +3,7 @@
 // Persistent Storage Variable
 monogatari.storage ({
 	AUP:0,
-	Circuit:'',
+	Circuit:0,
 	Bag:0,
 	Ill:0,
 	Micro:0,

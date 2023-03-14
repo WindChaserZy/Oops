@@ -30,6 +30,12 @@ monogatari.action ('message').messages ({
 		<p>您已进入AD世界</p>
 		`
 	},
+	'End':{
+		title:'The End',
+		body:`
+		<p>游戏结束，您回到了真实世界。</p>
+		`
+	},
 	'GetIll':{
 		title:'系统提示',
 		body:`
@@ -156,6 +162,7 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
+	'Poem':'2.png',
 	'snow':'1.jpg',
 	'tree':'2.jpeg',
 	'school':'3.jpg',
@@ -231,7 +238,8 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'show scene #f7f6f6 with fadeIn',
+		'show background Poem with fadeIn',
+		'play music Evening with loop',
 		'nvl “你要写这个世界',
 		'nvl 就不能只写春日里雨后泥土里好闻的香味和刚刚萌芽的爱恋',
 		'nvl 不能只写夏日里的爽口的橘子汽水和在期刊酝酿的paper',
@@ -242,7 +250,6 @@ monogatari.script ({
 		'nvl 要写随时随地无需任何条件就发生干涉的自然光',
 		'nvl 要写随手可得的星星和月亮',
 		'nvl 要写每天都快快乐乐感到充实的园子里的你我”',
-		//'show message FirstMail',
 		'jump beginning'
 	],
 
